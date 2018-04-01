@@ -1,12 +1,10 @@
 ﻿# Introduction
 
-This project solves Problem 3: Theatre Seating as defined here: 
-
-[a relative link](Design Problem - Set 2.md)
+This project solves Problem 3: Theatre Seating as defined in "Design Problem - Set 2.md".
 
 ## Running the project 
 
-Defined in the Main method is two variable, one named textFloorPlan and the other named textPatrons. In order to test different combinations, simply modify these variables. 
+Defined in the Main method is two variables, one named textFloorPlan and the other named textPatrons. In order to test different combinations, simply modify these variables. 
 
 
 ```csharp
@@ -43,6 +41,6 @@ Miller 12";
 
 Most of the classes should be fairly self explanitory. The only two considerations are: 
 
-1. When performing the seating assignment we seat the largest groups 1st as they will require large contiguous blocks of seating. 
+1. When performing the seating assignment, we seat the largest groups 1st as they will require large contiguous blocks of seating. 
 
 2. We used Dictionaries to store the list of Sections in a row, seats in a section etc. this could probably have been avoided, using a simpler construct. 
