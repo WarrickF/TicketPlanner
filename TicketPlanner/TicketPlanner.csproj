@@ -42,7 +42,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Cinema.cs" />
     <Compile Include="CinemaFloorPlan.cs" />
     <Compile Include="CinemaRow.cs" />
     <Compile Include="CinemaSeat.cs" />

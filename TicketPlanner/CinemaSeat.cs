@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace TicketPlanner
 {
+    /// <summary>
+    /// A seat which is part of a section. 
+    /// </summary>
     class CinemaSeat
     {
 
@@ -45,6 +48,10 @@ namespace TicketPlanner
             get { return _reserved; }
         }
 
+        /// <summary>
+        /// Reserves the specified preSold ticket. This links the patron to the seat.
+        /// </summary>
+        /// <param name="preSale">The pre sale.</param>
         public void Reserve(PreSale preSale)
         {
             _reserved = true;
@@ -52,11 +59,6 @@ namespace TicketPlanner
             preSale.Seats.Add(this);
         }
 
-        public void unReserve()
-        {
-            _reserved = false;
-            _patronName = string.Empty;
-        }
     }
 
 

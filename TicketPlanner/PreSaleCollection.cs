@@ -7,6 +7,9 @@ using System.Threading.Tasks;
 
 namespace TicketPlanner
 {
+    /// <summary>
+    /// This class represents a collection of preSold tickets. 
+    /// </summary>
     class PreSaleCollection
     {
         Dictionary<int, PreSale> _preSales = new Dictionary<int, PreSale>();
@@ -17,6 +20,10 @@ namespace TicketPlanner
             set { _preSales = value; }
         }
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="PreSaleCollection"/> class. Concerts the string format into instance that can easily be worked with. 
+        /// </summary>
+        /// <param name="patronOrders">The patron orders. See the Main() method and Readme for examples of the expected format of this text input.</param>
         public PreSaleCollection(String patronOrders)
         {
             

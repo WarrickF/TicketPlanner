@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace TicketPlanner
 {
+    /// <summary>
+    /// A class which represents a preSold ticket. 
+    /// </summary>
     class PreSale
     {
         public string PatronName { get; set; }
@@ -19,6 +22,10 @@ namespace TicketPlanner
             PartySize = partySize;
         }
 
+        /// <summary>
+        /// This prints the final desired output. 
+        /// </summary>
+        /// <param name="floorPlan">The floor plan.</param>
         public void Print(CinemaFloorPlan floorPlan)
         {
             String seats = string.Empty;

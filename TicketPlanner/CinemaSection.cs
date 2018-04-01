@@ -7,9 +7,12 @@ using System.Collections;
 
 namespace TicketPlanner
 {
+    /// <summary>
+    /// A section which is part of a CinemaRow. There are multiple sections in a row. 
+    /// </summary>
     class CinemaSection
     {
-        //private Dictionary<int, CinemaSeat> _seats = new Dictionary<int, CinemaSeat>();
+        
         public Dictionary<int, CinemaSeat> Seats { get; set; } = new Dictionary<int, CinemaSeat>();
         public CinemaRow Row { get; }
         public int SectionNumber { get; }
@@ -36,8 +39,6 @@ namespace TicketPlanner
             Console.Write(" ");
             
         }
-
-
 
         public bool reserveSeats(PreSale preSale)
         {
